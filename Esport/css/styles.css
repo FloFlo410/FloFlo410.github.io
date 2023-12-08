@@ -1,0 +1,44 @@
+@font-face { font-family: NexaBlack; src: url('../fonts/Nexa/nexa-black.otf'); } 
+@font-face { font-family: NexaBook; src: url('../fonts/Nexa/nexa-book.ttf'); } 
+@font-face { font-family: NexaBoldItalic; src: url('../fonts/Nexa/nexa-bold-italic.ttf'); } 
+html, body{
+    margin: 0;
+    height: 100%;
+}
+:root
+{
+    --couleur-principal-bleu--: #092D74;
+    --couleur-principal-rouge--: #CF152D;
+    --couleur-contraste-principal--: #dfdfdf; 
+}
+.navbar, .nav-link, .navbar-brand{
+    font-family: NexaBlack;
+    background-color: var(--couleur-principal-bleu--);
+    color: var(--couleur-contraste-principal--);
+
+    
+
+}
+.nav-item a:hover{
+    color: var(--couleur-principal-rouge--);
+}
+.parallax{
+    background-image: url('../img/placeholder.webp');
+
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pret-go{
+    font-family: NexaBlack;
+    color: #CF152D;
+    font-size: 500%;
+}
+/*Jeux*/
+.logo-jeu{
+    padding: 10%;
+    width: 100%;
+}
