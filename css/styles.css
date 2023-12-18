@@ -40,9 +40,9 @@ html, body{
 }
 /*Jeux*/
 .logo-jeu{
-    padding: 10%;
-    width: 100%;
+    width: 80%;
 }
+
 /*Inscription*/
 a.button {
     -webkit-appearance: button;
@@ -51,4 +51,14 @@ a.button {
 
     text-decoration: none;
     color: initial;
+}
+/*Resulat*/
+table, td, th,tr{
+    border: #092D74;
+    border-style: solid;
+
+}
+table{
+    width: 100%;
+    margin-top: 5%;
 }
