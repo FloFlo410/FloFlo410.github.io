@@ -38,7 +38,8 @@ body, .container-fluid{
   padding: 0;
 }
 main{
-  
+  margin: 0;
+  padding: 0;
   min-height: calc(100vh - 4rem);
 }
 .navbar, .nav-link, .navbar-brand{
@@ -170,7 +171,14 @@ main{
 .logo-jeu{
     width: 80%;
 }
-
+/*Equipe*/
+.joueur
+{
+  height: 500px;
+  width: auto;
+  margin: 0;
+  padding: 0;
+}
 /*Inscription*/
 a.button {
     -webkit-appearance: button;
