@@ -24,14 +24,22 @@
     --couleur-principal-rouge--: #CF152D;
     --couleur-contraste-principal--: #dfdfdf; 
 
-    --clr-neon: #CF152D;
+    --couleur-footer: rgb(213, 213, 213);
+
+    --clr-neon: #ffffff;
     --clr-bg: #092D74;
 }
 html, body{
     margin: 0;
     height: 100%;
 }
-
+body{
+  margin: 0;
+}
+main{
+  
+  min-height: calc(100vh - 4rem);
+}
 .navbar, .nav-link, .navbar-brand{
     font-family: NexaBlack;
     background-color: var(--couleur-principal-bleu--);
@@ -118,8 +126,15 @@ html, body{
   }
         
 /*Accueil*/
+/* On screens that are 600px or less*/
+@media screen and (max-width: 600px) {
+  .parallax {
+    background-image: url('../img/pexels-john-petalcurin-2115257\ -\ Copie.jpg');
+  }
+}
+
 .parallax{
-    background-image: url('../img/placeholder.webp');
+    background-image: url('../img/pexels-john-petalcurin-2115257.jpg');
 
     height: 100%;
 
@@ -128,10 +143,27 @@ html, body{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.pret-go{
-    font-family: NexaBlack;
-    color: #CF152D;
-    font-size: 500%;
+.groupe-button, .btn-group
+{
+  width: 80%;
+  height: 100px;
+  font-size: 25pt;
+
+}
+.groupe-button-middle
+{
+  width: 80%;
+  font-size: 30pt;
+}
+.jeux-equipe{
+    margin-bottom: 5%;
+    margin-top: 2%;
+}
+.btn-version1{
+  width: 80%;
+  height: 50px;
+  font-size: larger;
+  margin-bottom: 2%;
 }
 /*Jeux*/
 .logo-jeu{
@@ -156,4 +188,14 @@ table, td, th,tr{
 table{
     width: 100%;
     margin-top: 5%;
+}
+/*Footer*/
+.footer
+{
+  position: fixed;
+  bottom: 0;
+  background-color: var(--couleur-footer);
+  
+  height: 4rem;
+  
 }
