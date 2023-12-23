@@ -14,61 +14,67 @@
     <title>Cégep TR - ESport</title>
 </head>
 <body>
+    <main>
         <!--Navbar Start-->
 
-        <nav class="navbar sticky-top navbar-expand-lg">
-            <div>
-                <a class="navbar-brand ms-4" href="">
-                    ESport
-                    <img src="" alt="">
-                </a>
+        <div class="container-fluid row">
+            <nav class="col-12 navbar sticky-top navbar-expand-lg">
+                <div>
+                    <a class="navbar-brand ms-4" href="">
+                        ESport
+                        <img src="" alt="">
+                    </a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="justify-content-end collapse navbar-collapse " id="navbarScroll">
+                    <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="informations.html">Informations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="jeux.html">Jeux</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="inscription.html">Inscription</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Équipe
+                            </a>
+                            <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="equipe2023.html">2023</a></li>
+                            </ul>
+                        </li>   
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="resultat.html">Résultat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="calendrier.html">Calendrier des événements</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-4" href="contactezNous.html">Contactez-nous</a>
+                        </li>
+                        
+                        
+                    </ul>
+    
+                </div>
+    
+            </nav>
+        
+        
+
+            <!--Navbar End-->
+
+            <div class="row col-12 text-center p-5 div-neon-button">
+                <a href="#" class= "col-8 offset-2 neon-button text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Web Diffusion</a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="justify-content-end collapse navbar-collapse " id="navbarScroll">
-                <ul class="navbar-nav navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="index.html">Accueil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="informations.html">Informations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="jeux.html">Jeux</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="inscription.html">Inscription</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Équipe
-                        </a>
-                        <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="equipe2023.html">2023</a></li>
-                        </ul>
-                    </li>   
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="resultat.html">Résultat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="calendrier.html">Calendrier des événements</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link me-4" href="contactezNous.html">Contactez-nous</a>
-                    </li>
-                    
-                    
-                </ul>
 
-            </div>
-
-        </nav>
-
-        <!--Navbar End-->
-
-        <div class="text-center p-5 div-neon-button">
-            <a href="#" class="neon-button text-center" data-bs-toggle="modal" data-bs-target="#exampleModal">Web Diffusion</a>
         </div>
 
         <div class="parallax h-100">
@@ -79,9 +85,9 @@
         <div class="text-center">
             
             <div class="groupe-button btn-group mb-2 mb-md-0 btn-block m-3">
-                <a class="btn groupe-button btn-danger ">Nos jeux</a>
+                <a href="jeux.html" class="btn groupe-button btn-danger ">Nos jeux</a>
                 <h1 class="groupe-button-middle btn-outline-danger col-8">Tous ensemble pour la victoire!</h1>
-                <a class="btn groupe-button btn-danger ">Notre Équipe</a>
+                <a href="equipe2023.html" class="btn groupe-button btn-danger ">Notre Équipe</a>
             </div>
             
             <div class="row col-12">
@@ -96,7 +102,7 @@
         </div>
         <div class="text-center ">
             <h1>Allez-vous faire partie de nos victoires?</h1>
-            <a class="btn btn-version1 btn-danger ">Inscrivez-vous!</a>
+            <a href="inscription.html" class="btn btn-version1 btn-danger ">Inscrivez-vous!</a>
 
         </div>
 
@@ -145,6 +151,8 @@
     </div>
 
     <!--Fin Modal-->
+    </main>
+        
 
     <!--Footer-->
     <footer>
